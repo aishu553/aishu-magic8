@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8-Ball</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Magic 8-Ball</h1>
+        <p>Ask a yes/no question and get your answer!</p>
+
+        <!-- Magic 8-Ball -->
+        <div class="magic-ball" id="magicBall">
+            <span id="ballText">8</span>
+        </div>
+
+        <input type="text" id="question" placeholder="Ask your question...">
+        <button onclick="askQuestion()">Ask</button>
+
+        <div id="answer" class="hidden-answer"></div>
+        <button onclick="resetPage()">Ask again</button>
+    </div>
+
+    <audio id="magicSound" src="magicsound.mp3.mp3" preload="auto"></audio>
+
+    <script src="script8.js"></script>
+</body>
+</html>
